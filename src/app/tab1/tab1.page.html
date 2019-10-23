@@ -39,14 +39,15 @@
     <ion-button color="success" (click) ="click(num.value)">Success</ion-button>
     </ion-card>
     <ion-item>
-      <ion-label>111 &nbsp;{{Timer1Starthr}} : {{Timer1Startmin}}</ion-label>
+      <ion-label>TimeStart1 &nbsp;{{Timer1Starthr}} : {{Timer1Startmin}}</ion-label>
       <ion-datetime displayFormat=" " pickerFormat = "HH:mm" (ionChange)="getTimeStart1(timeSelectStart1.value)" #timeSelectStart1></ion-datetime>
     </ion-item>
-
+  <ion-item>
  
-      <ion-label>222 {{Timer1Stophr}} : {{Timer1Stopmin}}</ion-label>
+      <ion-label>TimeStop1 {{Timer1Stophr}} : {{Timer1Stopmin}}</ion-label>
 
-    <ion-datetime  displayFormat=" " pickerFormat = "HH:mm" (ionChange)="getTimeStop1(timeSelectStop1.value)" #timeSelectStop1></ion-datetime></ion-item>
+    <ion-datetime  displayFormat=" " pickerFormat = "HH:mm" (ionChange)="getTimeStop1(timeSelectStop1.value)" #timeSelectStop1></ion-datetime>
+  </ion-item>
 
 
 </ion-content>
